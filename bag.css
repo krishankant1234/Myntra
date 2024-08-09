@@ -1,0 +1,215 @@
+.bag-items-container {
+  display: inline-block;
+  width: 64%;
+  padding-right: 20px;
+  border-right: 1px solid #eaeaec;
+  padding-top: 32px;
+  color: #282c3f;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+
+.bag-page {
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+.bag-summary {
+  vertical-align: top;
+  display: inline-block;
+  width: 35%;
+  padding: 24px 0 0 16px;
+  color: #282c3f;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+
+.bag-details-container {
+  margin-bottom: 16px;
+}
+
+.price-header {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 24px 0 16px;
+  color: #535766;
+}
+
+.price-item {
+  margin-bottom: 12px;
+  line-height: 16px;
+  font-size: 14px;
+  color: #282c3f;
+}
+
+.price-item-value {
+  float: right;
+}
+
+.priceDetail-base-discount {
+  color: #03a685;
+}
+
+.price-footer {
+  font-weight: 700;
+  font-size: 15px;
+  padding-top: 16px;
+  border-top: 1px solid #eaeaec;
+  color: #3e4152;
+  line-height: 16px;
+}
+
+.btn-place-order {
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 2px;
+  border-width: 0px;
+  padding: 10px 16px;
+  background-color: rgb(255, 63, 108);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.bag-item-container {
+  margin-bottom: 8px;
+  background: #fff;
+  font-size: 14px;
+  border: 1px solid #eaeaec;
+  border-radius: 4px;
+  position: relative;
+  padding: 12px 12px 0;
+}
+
+.item-left-part {
+  position: absolute;
+  background: rgb(255, 242, 223);
+  height: 148px;
+  width: 111px;
+}
+
+.item-right-part {
+  padding-left: 12px;
+  position: relative;
+  min-height: 148px;
+  margin-left: 111px;
+  margin-bottom: 12px;
+}
+
+.bag-item-img {
+  width: 100%;
+}
+
+.return-period {
+  display: inline-flex;
+  font-size: 14px;
+  padding-top: 8px;
+}
+
+.return-period-days {
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+.delivery-details {
+  margin-top: 5px;
+  color: #282c3f;
+  font-size: 12px;
+  letter-spacing: -.1px;
+  margin-bottom: 8px;
+  line-height: 15px;
+}
+
+.delivery-details-days {
+  color: #03a685;
+}
+
+.remove-from-cart {
+  position: absolute;
+  font-size: 25px;
+  top: 10px;
+  right: 18px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+
+/* Basic styling for dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Icon button styling */
+.dropdown-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Dropdown content hidden by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1;
+}
+.dropdown-content h5{
+    padding: 8px;
+    color: #282c3f;
+}
+.dropdown-content p{
+    margin-left: 8px;
+    font-size: 14px;
+    color: #282c3f;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #333; /* Dark color for text */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+/* Remove border on the last link */
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+/* Change background color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown content when hovering over the dropdown container */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change icon color on hover */
+
+.dropdown-content .account{
+    border:  none;
+    border-radius: 4px;
+    margin: 4px 30px 4px 8px;
+    padding: 2px 4px;
+
+}
+.dropdown-content .account:hover{
+    border: 1px solid #fb4b4b;
+}
+.dropdown-content a{
+    color: #fb4b4b;
+}

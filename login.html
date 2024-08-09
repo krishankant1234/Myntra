@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style>
+
+      * {
+          margin: 0;
+          padding: 0;
+          font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+          box-sizing: border-box;
+      }
+      header {
+          display: flex;
+          background-color: #ffffff;
+          height: 80px;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #b6b1b1;
+      }
+      .myntra_home {
+          height: 45px;
+      }
+      .logo_container {
+          margin-left: 4%;
+      }
+      .action_bar {
+          margin-right: 4%;
+      }
+      .action_bar    a{
+          text-decoration: none;
+          color: black;
+      }
+      .nav_bar {
+          display: flex;
+          min-width: 500px;
+          justify-content: space-evenly;
+      }
+      .nav_bar a {
+          font-size: 14px;
+          letter-spacing: .3px;
+          color: #282c3f;
+          font-weight: 700;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 28px 0;
+          border-bottom: 5px solid #ffffff;
+      }
+      .nav_bar a:hover {
+          border-bottom: 4px solid #f54e77;
+      }
+
+      .nav_bar a sup {
+          color: #ff3f6c;
+          font-size: 10px;
+      }
+
+      .search_bar {
+          height: 40px;
+          min-width: 200px;
+          width: 30%;
+          display: flex;
+          align-items: center;
+      }
+      .search_icon {
+          box-sizing: content-box;
+          height: 20px;
+          padding: 10px;
+
+          background-color: #f5f5f6;
+          color: #282c3f;
+          font-weight: 300;
+          border-radius: 4px 0 0 4px;
+      }
+      .search_input {
+          color: #696e79;
+          background-color: #f5f5f6;
+          flex-grow: 1;
+          height: 40px;
+          border: 0;
+          border-radius: 0 4px 4px 0;
+      }
+
+      .action_bar {
+          display: flex;
+          min-width: 200px;
+          justify-content: space-evenly;
+      }
+
+      .action_container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #e60023;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d1001a;
+}
+
+.signup-link, .login-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.signup-link a, .login-link a {
+    color: #e60023;
+    text-decoration: none;
+}
+
+.signup-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
+      .bag-item-count {
+          background-color: #f16565;
+          white-space: nowrap;
+          text-align: center;
+          line-height: 18px;
+          padding: 0 6px;
+          height: 18px;
+          position: relative;
+          border-radius: 50%;
+          font-size: 12px;
+          color: #fff;
+          left: 13px;
+          top: -44px;
+          font-weight: 700;
+          cursor: pointer;
+      }
+
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo_container">
+            <a href="index.html"><img class="myntra_home" src="myntra.webp" alt="Myntra Home"></a>
+        </div>
+        <nav class="nav_bar">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Home & Living</a>
+            <a href="#">Beauty</a>
+            <a href="#">Studio <sup>New</sup></a>
+        </nav>
+        <div class="search_bar">
+            <span class="material-symbols-outlined search_icon">search</span>
+            <input class="search_input" placeholder="Search for products, brands and more">
+        </div>
+        <div class="action_bar">
+            
+            <div class="action_container">
+                <a href="" class="action_container">
+                <span class="material-symbols-outlined action_icon">favorite</span>
+                <span class="action_name">Wishlist</span>
+
+                    </a>
+            </div>
+
+            <a class="action_container" href="bag.html">
+                <span class="material-symbols-outlined action_icon">shopping_bag</span>
+                <span class="action_name">Bag</span>
+                <span class="bag-item-count">0</span>
+            </a>
+        </div>
+    </header>
+    <div class="auth-container">
+        <div class="auth-form">
+            <h2>Login</h2>
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="signup-link">Don't have an account? <a href="signup.html">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+    <script>
+        let bagItems;
+        onLoad();
+
+        function onLoad() {
+          let bagItemsStr = localStorage.getItem('bagItems');
+          bagItems = bagItemsStr ? JSON.parse(bagItemsStr) : [];
+          displayItemsOnHomePage();
+          displayBagIcon();
+        }
+
+        function addToBag(itemId) {
+          bagItems.push(itemId);
+          localStorage.setItem('bagItems', JSON.stringify(bagItems));
+          displayBagIcon();
+        }
+
+        function displayBagIcon() {
+          let bagItemCountElement = document.querySelector('.bag-item-count');
+          if (bagItems.length > 0) {
+            console.log('I am here');
+            bagItemCountElement.style.visibility = 'visible';
+            bagItemCountElement.innerText = bagItems.length;
+          } else {
+            bagItemCountElement.style.visibility = 'hidden';
+          }
+        }
+
+        function displayItemsOnHomePage() {
+          let itemsContainerElement = document.querySelector('.items-container');
+          if (!itemsContainerElement) {
+            return;
+          }
+          let innerHtml = '';
+          items.forEach(item => {
+            innerHtml += `
+            <div class="item-container">
+              <img class="item-image" src="${item.image}" alt="item image">
+              <div class="rating">
+                  ${item.rating.stars} ⭐ | ${item.rating.count}
+              </div>
+              <div class="company-name">${item.company}</div>
+              <div class="item-name">${item.item_name}</div>
+              <div class="price">
+                  <span class="current-price">Rs ${item.current_price}</span>
+                  <span class="original-price">Rs ${item.original_price}</span>
+                  <span class="discount">(${item.discount_percentage}% OFF)</span>
+              </div>
+              <button class="btn-add-bag" onclick="addToBag(${item.id})">Add to Bag</button>
+            </div>`
+          });
+          itemsContainerElement.innerHTML = innerHtml;
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
